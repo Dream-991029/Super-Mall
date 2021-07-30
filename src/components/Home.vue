@@ -1,18 +1,15 @@
 <template>
-  <div id="app">
-    <router-view/>
+  <div>
+    <h2>Hello Vue</h2>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App',
-  components: {
-
-  }
+  name: "Home"
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>
