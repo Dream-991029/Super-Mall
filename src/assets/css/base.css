@@ -1,0 +1,62 @@
+@import "normalize.css";
+
+/* 获取跟元素, 相当于是html */
+/* 使用--的形式声明变量, 然后通过var(变量名)方式进行引用 */
+:root {
+  --color-text: #666;
+  --color-high-text: #ff5777;
+  --color-tint: #ff8198;
+  --color-background: #fff;
+  --font-size: 14px;
+  --line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* 设置字体 */
+  font-family: "Helvetica Neue";
+  /* 禁止用户鼠标在页面上选中文字/图片等 */
+  user-select: none;
+  /* 苹果浏览器引擎, tap点击, 背景高亮, 颜色用数值调节 */
+  -webkit-tap-highlight-color: transparent;
+  /* 背景颜色 */
+  background: var(--color-background);
+  /* 字体颜色 */
+  color: var(--color-text);
+  /* rem vw/vh */
+  width: 100vw;
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+/* 清除浮动 */
+.clear-fix::after {
+  display: block;
+  clear: both;
+  width: 0;
+  height: 0;
+  content: '';
+  visibility: hidden;
+}
+
+.clear-fix {
+  zoom: 1;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
