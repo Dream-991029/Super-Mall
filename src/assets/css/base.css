@@ -1,6 +1,6 @@
 @import "normalize.css";
 
-/* 获取跟元素, 相当于是html */
+/* 获取根元素, 相当于是html */
 /* 使用--的形式声明变量, 然后通过var(变量名)方式进行引用 */
 :root {
   --color-text: #666;
