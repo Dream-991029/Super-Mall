@@ -1,9 +1,6 @@
 <template>
   <div id="tab-bar">
-    <div class="tab-bar-item">首页</div>
-    <div class="tab-bar-item">分类</div>
-    <div class="tab-bar-item">购物车</div>
-    <div class="tab-bar-item">我的</div>
+    <slot></slot>
   </div>
 </template>
 
@@ -24,9 +21,5 @@ export default {
     background-color: #f6f6f6;
   }
 
-  .tab-bar-item {
-    flex: 1;
-    height: 49px;
-    text-align: center;
-  }
+
 </style>
