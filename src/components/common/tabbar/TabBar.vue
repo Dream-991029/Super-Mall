@@ -20,6 +20,4 @@ export default {
     box-shadow: 0 -3px 1px rgba(100, 100, 100, .08);
     background-color: #f6f6f6;
   }
-
-
 </style>
