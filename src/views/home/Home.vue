@@ -8,9 +8,20 @@
 
 <script>
 import NavBar from "components/common/navbar/NavBar";
+import {getHomeMultiData} from "network/home";
+
 export default {
   name: "Home",
-  components: {NavBar}
+  components: {NavBar},
+  created() {
+    getHomeMultiData()
+      .then(res => {
+        console.log(res)
+      })
+      .catch(err => {
+        console.log(err)
+      })
+  }
 }
 </script>
 
